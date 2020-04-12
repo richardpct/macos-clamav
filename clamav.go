@@ -35,6 +35,7 @@ func configure() {
 	cmd := exec.Command("./configure",
 		"--prefix="+*destdir,
 		"--with-openssl="+*destdir,
+		"--with-pcre="+*destdir,
 		"--disable-xml",
 		"--sysconfdir="+*destdir+"/etc/clamav",
 		"--with-dbdir="+*destdir+"/var/lib/clamav")
